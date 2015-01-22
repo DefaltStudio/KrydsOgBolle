@@ -9,3 +9,5 @@ C:\Users\Anders\Dropbox\Spil\Multiplayer kryds og bolle\Temp\bin\Debug\Unity.Dat
 C:\Users\Anders\Dropbox\Spil\Multiplayer kryds og bolle\Temp\bin\Debug\ICSharpCode.NRefactory.dll
 C:\Users\Anders\Dropbox\Spil\Multiplayer kryds og bolle\obj\Debug\Assembly-CSharp.dll
 C:\Users\Anders\Dropbox\Spil\Multiplayer kryds og bolle\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Anders\Documents\GitHub\KrydsOgBolle\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Anders\Documents\GitHub\KrydsOgBolle\obj\Debug\Assembly-CSharp.dll

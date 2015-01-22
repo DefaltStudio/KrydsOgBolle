@@ -6,12 +6,12 @@ public class MouseHover : MonoBehaviour {
 
 	List<int> crosses = new List<int>();
 	public bool IsOccupied;
-	public Texture2D crossTransform;
+	public Texture2D textureCross;
+    public Texture2D textureCircle;
 
 	void Start () {
 		renderer.material.color = new Color (15.0F, 0, 0);
 		IsOccupied = false;
-
 	}
 
 	void OnMouseEnter() {
@@ -24,7 +24,21 @@ public class MouseHover : MonoBehaviour {
 
 	void OnMouseDown () 
 	{
-        Instantiate(crossTransform, this.transform.position, Quaternion.identity);
-		//crossTransform.transform.parent = cross;
+        if (!IsOccupied)
+        {
+            if (MainScript.CrossCricle == 0) {
+                renderer.material.mainTexture = textureCross;
+                IsOccupied = true;
+                MainScript.CrossCricle++;
+            }
+            else if (MainScript.CrossCricle == 1)
+            {
+                renderer.material.mainTexture = textureCircle;
+                IsOccupied = true;
+                MainScript.CrossCricle--;
+            }
+
+            
+        }
 	}
 }

@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: a93dbc6f8954b47c88cf32e571aab239
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - textureCross: {fileID: 2800000, guid: a8c221b40e0124ab8806f79a1ab8009c, type: 3}
+  - textureCircle: {fileID: 2800000, guid: ccff514ef2bf642f2b08770397ada88c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
