@@ -8,5 +8,8 @@ public class MainScript : MonoBehaviour {
 	void Start () {
         CrossCricle = 0;
 	}
-	
+
+	void Update () {
+		
+	}
 }

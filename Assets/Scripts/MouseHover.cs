@@ -5,46 +5,30 @@ using System.Collections.Generic;
 public class MouseHover : MonoBehaviour 
 
 {
-
 	List<int> crosses = new List<int>();
 	public bool IsOccupied;
-
-	public bool IsCross;
-	public bool IsCircle;
 
 	public Texture2D textureCross;
     public Texture2D textureCircle;
 
-
+	public static bool IsCross;
+	public static bool IsCircle;
 
 	void Start () {
 		renderer.material.color = new Color (15.0F, 0, 0);
 		IsOccupied = false;
 	}
 
-	void Update ()
-	{
+	void Update() {
 		RaycastHit hit;
-
-		Ray ray = new Ray(transform.position, transform.up * 10);
+		Ray ray = new Ray (transform.position, transform.up * 10);
 		Debug.DrawRay (transform.position, transform.up * 10, Color.green);
-
-		if(Physics.Raycast(ray, out hit))
-		   {
-			if(hit.collider.gameObject.tag == "Cross")
-			{
+		if (Physics.Raycast (ray, out hit)) {
+			if (hit.collider.gameObject.tag == "Cross")
 				IsCross = true;
-				IsCircle = false;
-
-			}
-
-			if(hit.collider.gameObject.tag == "Circle")
-			{
-				IsCross = false;
+			else if (hit.collider.gameObject.tag == "Circle")
 				IsCircle = true;
-			}
 		}
-
 	}
 
 	void OnMouseEnter() {
@@ -76,4 +60,16 @@ public class MouseHover : MonoBehaviour
             
         }
 	}
+
+	void Check ()
+	{
+		if (gameObject.tag == "Cross") 
+		{
+			if(IsCross == true)
+			{
+
+			}
+		}
+	}
+	
 }
