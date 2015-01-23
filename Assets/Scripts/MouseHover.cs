@@ -17,6 +17,7 @@ public class MouseHover : MonoBehaviour
 	void Start () {
 		renderer.material.color = new Color (15.0F, 0, 0);
 		IsOccupied = false;
+        MainScript.Tiles.Add(gameObject); // få arrangeret tiles i descenderende orden, så den kan bruges til at finde ud af om der er 3 på stribe.
 	}
 
 	void Update() {
